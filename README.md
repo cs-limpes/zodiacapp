@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+I've also set up Docker to run the app in a container. To run the app in a container, you can use the following commands:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `docker build -t zodiacapp
+
+This command will build the Docker image for the app. The `-t` flag is used to tag the image with the name `zodiacapp`.
+
+### `docker run -it -p 8080:80 zodiacapp`
+
+This command will run the app in a container. The `-it` flag is used to run the container in interactive mode. The `-p` flag is used to map the port `8080` on the host to the port `80` in the container. The `zodiacapp` argument is the name of the image that you want to run in a container.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run for quick and easy deployments that reflect changes automatically:
 
 ### `npm start`
 
