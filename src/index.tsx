@@ -18,6 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+      <p>This is a test</p>
       <App />
     </ClerkProvider>
   </React.StrictMode>
